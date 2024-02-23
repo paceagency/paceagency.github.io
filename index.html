@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <div class="logo-container">
+          <img src="logo1.png" alt="Culinary Creations Co">
+        </div>
+        
+        <nav class="navigation">
+          <ul>
+       
+        </nav>
+        <div id="about-us-details" style="display: none;">
+  <p>Welcome to Culinary Creations, where we believe in the power of delicious and nutritious food to transform lives.</p>
+  <p>At Culinary Creations, our mission is simple: to provide you with the tools, resources, and inspiration you need to create healthy meals that nourish both body and soul. We understand that making healthy choices can sometimes feel overwhelming, which is why we're here to guide you every step of the way.</p>
+  <p>Our team is passionate about food and nutrition, and we're dedicated to bringing you the best recipes, tips, and information to help you live your healthiest life. Whether you're a seasoned chef or just starting out in the kitchen, we have something for everyone.</p>
+  <p>From vibrant salads and hearty soups to mouthwatering main courses and decadent desserts, our recipes are designed to be both nutritious and delicious. We believe that healthy eating should never compromise on flavor, and our recipes prove just that.</p>
+  <p>In addition to our wide range of recipes, we also offer expert tips and advice on meal planning, grocery shopping, and cooking techniques. We want to empower you to make informed choices about the food you eat, so you can feel confident in your health journey.</p>
+  <p>So whether you're looking to improve your eating habits, explore new flavors, or simply enjoy delicious food, Culinary Creations is here to inspire and support you every step of the way. Join us on our journey to better health through food – together, we can create a healthier, happier world, one meal at a time.</p>
+</div>
+<nav class="navigation">
+  <ul>
+    <li><a href="#" onclick="toggleAboutUs()">About Us</a></li>
+    <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9518323/">Food Education</a></li>
+    <li><a href="https://10times.com/e1zr-d26x-f3d0" target="_blank">Events/Workshops</a></li>
+    <li><a href="https://foodandfitnesspro.com/testimonials/" target="_blank">Testimonials</a></li>
+    <li><a href="mailto:itsculinary24@gmail.com">Contact Us</a></li>
+    <li><a href="#" onclick="toggleNoticeBoard()">Notice Board</a></li>
+      </ul>
+    </nav>
+    <div id="notice-board-details" class="notice-board-details">
+      <h3>Important Notice</h3>
+      <p>Join us for our upcoming workshop on "Healthy Eating Habits" on February 28th, 2024.</p>
+      <p>Time: 10:00 AM - 12:00 PM</p>
+      <p>Venue: Culinary Creations Kitchen</p>
+      <p>call us: MANAGER +254796151773</p>
+      <p>Contact us at: <a href="mailto:itsculinary24@gmail.com">itsculinary24@gmail.com</a></p>
+    </div>
+
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+      
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class="meal-details-content">
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
