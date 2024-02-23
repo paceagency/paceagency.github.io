@@ -9,6 +9,31 @@
     --tenne-tawny: #08d676;
     --tenne-tawny-dark: #b54507;
 }
+/* Marquee */
+.marquee {
+    width: 100%; /* Set the width to 100% */
+    overflow: hidden; /* Hide the overflow */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    background-color: rgb(93, 241, 138);
+  }
+  
+  .marquee p {
+    font-family: "Times New Roman", Times, serif; /* Set font family to Times New Roman */
+    font-weight: bold; 
+    display: inline-block; /* Display the text as inline-block */
+    margin: 0; /* Remove any default margin */
+    animation: marquee 20s linear infinite; /* Apply animation */
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 /* Navigation */
 .navigation {
     margin-top: 20px;
